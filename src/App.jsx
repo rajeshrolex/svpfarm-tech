@@ -8,10 +8,12 @@ import ChickenPrice from './pages/ChickenPrice';
 import LiftingSale from './pages/LiftingSale';
 import LiftingSaleDetails from './pages/LiftingSaleDetails';
 import { Toaster } from 'react-hot-toast';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
